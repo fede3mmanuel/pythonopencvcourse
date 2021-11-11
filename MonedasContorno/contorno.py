@@ -1,3 +1,4 @@
+# pip install opencv-contrib-python
 from cv2 import cv2
 imagen=cv2.imread('contorno.jpg')
 cv2.imshow('imagen', imagen)
