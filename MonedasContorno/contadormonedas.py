@@ -8,7 +8,7 @@ valorKernel = 3
 original = cv2.imread('monedas.jpg')
 gris = cv2.cvtColor(original, cv2.COLOR_BGR2GRAY)
 
-gauss = cv2.GaussianBlur(gris, (valorGauss, valorKernel), 0)
+gauss = cv2.GaussianBlur(gris, (valorGauss, valorGauss), 0)
 
 canny = cv2.Canny(gauss, 60, 100)
 
