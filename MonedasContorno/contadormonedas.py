@@ -2,10 +2,10 @@ from cv2 import cv2
 
 import numpy as np
 
-valorGauss = 3
-valorKernel = 3
+valorGauss = 1
+valorKernel = 33
 
-original = cv2.imread('monedas.jpg')
+original = cv2.imread('monedassoles.jpg')
 gris = cv2.cvtColor(original, cv2.COLOR_BGR2GRAY)
 
 gauss = cv2.GaussianBlur(gris, (valorGauss, valorGauss), 0)
